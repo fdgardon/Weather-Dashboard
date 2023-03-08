@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+};
+
+
+header{
+
+}
+
+header h1{
+    color: white;
+    font-weight: bolder;
+    position: flex;
+    padding: 30px;
+    margin-top: 0;
+    display: flex;
+    border: 1px rgb(55, 87, 219) solid;
+    margin-bottom: 0;  
+    width: 97%;
+    background-color: rgb(13, 88, 192);
+    justify-content: center;
+
+}
+
+
+.search-form {
+    width: 300px;
+    box-shadow: none;
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.search-form h2{
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+#input-box{
+    border-radius: 10px;
+    padding-block: 5px;
+    margin: 10px 0px;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+    margin-top: 0;
+}
+
+button{
+    
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    background-color: rgb(89, 89, 196);
+    display: inline-block;
+}
+
+#history{
+    
+    
+}
+   
+
+#historyList{
+    margin-block: 5px;
+    display: inline-block;
+    margin-left: 2px;
+    width: 100%;
+}
+
+#historyList:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+
+};
+
+  
+  #weather-header {
+    display: flex;
+  }
+  
+  #current-weather {
+    background-color: #e7e7e7;
+    width:96%;
+    padding: 30px;
+    border: 1px ghostwhite solid;
+    
+    margin-bottom: 10px;
+  }
+  
+  img {
+    margin: 2px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+  }
+  
+  #forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-bottom: 0px;
+  }
+  
+  .days {
+    background-color: #3b62d8;
+    color: #F7F9FB;
+    min-width: 180px;
+    text-align: center;
+    border: 2px yellow solid;
+    
+  }
+  #h2 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* hides content until class is removed */
+  .hidden {
+    display: none;
+  }
+  
+  /* history buttons */
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0px;
+  }
+
+  #madeBy{
+    margin-top: 500px;
+    margin-left: 45%;
+    position: absolute;
+    margin-bottom: 100px;
+  }
+
+  #results {
+    position: flex;
+    width: 500%;
+    margin-left: 350px;
+    margin-top: -210px;
+    border: none;
+    margin-bottom: 0px;
+    
+  }
+
+
+
+
+
