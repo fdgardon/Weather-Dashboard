@@ -31,6 +31,7 @@ var humidityFourth = document.querySelector(".humidityFourth")
 var tempFifth = document.querySelector(".tempFifth")
 var windFifth = document.querySelector(".windFifth")
 var humidityFifth = document.querySelector(".humidityFifth")
+var searchHistory = [];
 
 $(function () {
   $('#currentDay').text(dayjs().format('dddd, MMMM D, YYYY'))
@@ -61,9 +62,12 @@ searchBtn.addEventListener("click", function(){
    var search = inPut.value
    console.log(search)
    cityWeather(search);
-   localStorage.setItem("city", search)
+//    localStorage.setItem("city",search)
    historyList.textContent = search
+   localStorage.setItem('city', JSON.stringify(search));
 })
+
+
 
 
 function fiveDays (lat,lon){
