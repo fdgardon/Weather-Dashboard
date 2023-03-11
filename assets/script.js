@@ -34,7 +34,7 @@ var humidityFifth = document.querySelector(".humidityFifth")
 var searchHistory = [];
 
 $(function () {
-  $('#currentDay').text(dayjs().format('dddd, MMMM D, YYYY'))
+  $('#currentDay').text(dayjs().format('(MM/DD/YYYY)'))
 } );
 
 var apiKey = "280407854f36853e734d02d20ac15962"
@@ -57,17 +57,16 @@ fetch(url).then(function(response){
    
 })
 }
+searchBtn.addEventListener("click", function(e){
+    e.preventDefault();  
+    var search = inPut.value
+    console.log(search)
+    cityWeather(search);
 
-searchBtn.addEventListener("click", function(){
-   var search = inPut.value
-   console.log(search)
-   cityWeather(search);
-//    localStorage.setItem("city",search)
-   historyList.textContent = search
-   localStorage.setItem('city', JSON.stringify(search));
-})
-
-
+    historyList.textContent = search
+    localStorage.setItem("city", JSON.stringify(search)); 
+    
+});
 
 
 function fiveDays (lat,lon){
@@ -126,6 +125,13 @@ function reverseDate(text) {
     var year = date[0];
     return month + '/' + day + '/' + year;
 }
+
+
+
+
+
+
+
 
 
 

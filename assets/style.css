@@ -100,6 +100,12 @@ button {
   margin-bottom: 10px;
 }
 
+#cityName{
+  margin-right: 5px;
+}
+
+
+
 img {
   margin: 2px;
   margin-left: 10px;
@@ -129,7 +135,7 @@ img {
 }
 
 /* hides content until class is removed */
-.hidden {
+#hidden {
   display: none;
 }
 
