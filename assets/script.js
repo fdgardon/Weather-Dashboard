@@ -69,7 +69,7 @@ searchBtn.addEventListener("click", function(e){
         let li = document.createElement("li")
         li.textContent = arrayvalue[i]
 
-        historyList.appendChild(li)
+        historyList.append(li)
     }
 
     // historyList.textContent = search
