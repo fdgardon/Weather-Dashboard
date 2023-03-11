@@ -69,7 +69,7 @@ button {
 #history {}
 
 
-#historyList {
+#historyList li{
   width: 200px;
   margin-top: 5px;
   padding: 10px;
