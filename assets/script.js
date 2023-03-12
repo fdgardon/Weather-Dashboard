@@ -32,6 +32,7 @@ var tempFifth = document.querySelector(".tempFifth")
 var windFifth = document.querySelector(".windFifth")
 var humidityFifth = document.querySelector(".humidityFifth")
 let arrayvalue = []
+var button = " ";
 
 $(function () {
   $('#currentDay').text(dayjs().format('(MM/DD/YYYY)'))
@@ -65,11 +66,16 @@ searchBtn.addEventListener("click", function(e){
     arrayvalue.push(search)
     localStorage.setItem("city", JSON.stringify(arrayvalue))
 
+    historyList.innerHTML = "";
+    
+
     for(let i = 0; i < arrayvalue.length; i++){
         let li = document.createElement("li")
+        
         li.textContent = arrayvalue[i]
 
         historyList.append(li)
+        li = document.createElement("button")
     }
 
     // historyList.textContent = search
@@ -77,6 +83,8 @@ searchBtn.addEventListener("click", function(e){
     
 });
 
+
+button.addEventListener("click", cityWeather);
 
 function fiveDays (lat,lon){
    var url = "https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&appid="+apiKey+"&units=imperial";
