@@ -1,11 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-
-}
-
-;
-
+};
 
 header {}
 
@@ -21,16 +17,14 @@ header h1 {
   width: 97%;
   background-color: rgb(13, 88, 192);
   justify-content: center;
-
 }
-
 
 .search-form {
   width: 250px;
   box-shadow: none;
   background: #fff;
   padding: 20px;
-  margin: 8% auto 0;
+  margin: 0px;
   text-align: left;
   margin-left: 20px;
   margin-top: 10px;
@@ -53,7 +47,6 @@ header h1 {
 }
 
 button {
-
   width: 100%;
   padding: 10px;
   border-radius: 10px;
@@ -85,6 +78,7 @@ button {
   justify-content: center;
   
   
+  
 }
 
 
@@ -94,7 +88,7 @@ button {
 
 #current-weather {
   background-color: #5c9fde;
-  width: 1014px;
+  width: 1093px;
   padding: 30px;
   border: 1px ghostwhite solid;
   margin-bottom: 10px;
@@ -115,8 +109,9 @@ img {
 #forecast {
   display: flex;
   justify-content: space-between;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-bottom: 0px;
+  margin-right: 0px;
 }
 
 .days {
@@ -126,6 +121,7 @@ img {
   text-align: center;
   border: 2px yellow solid;
   padding: 5px;
+  margin: 0px;
 
 }
 
@@ -134,12 +130,6 @@ img {
   margin-bottom: 10px;
 }
 
-/* hides content until class is removed */
-#hidden {
-  display: none;
-}
-
-/* history buttons */
 ul {
   list-style: none;
   padding-left: 0;
@@ -147,18 +137,21 @@ ul {
 }
 
 #madeBy {
-  margin-top: 360px;
+  top: 700px;
   margin-left: 45%;
   position: absolute;
   margin-bottom: 100px;
 }
 
 #results {
-  position: flex;
-  width: 97%;
+  position: fixed;
+  width: 60%;
   margin-left: 280px;
-  margin-top: -210px;
+  top: 110px;
   border: none;
   margin-bottom: 0px;
+}
 
+.hidden {
+  display: none;
 }
