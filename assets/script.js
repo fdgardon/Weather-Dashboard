@@ -34,6 +34,7 @@ var humidityFifth = document.querySelector(".humidityFifth")
 let arrayvalue = []
 
 
+
 $(function () {
   $('#currentDay').text(dayjs().format('(MM/DD/YYYY)'))
 } );
@@ -67,28 +68,27 @@ searchBtn.addEventListener("click", function(e){
     localStorage.setItem("city", JSON.stringify(arrayvalue))
 
     historyList.innerHTML = "";
-    
 
     for(let i = 0; i < arrayvalue.length; i++){
         let li = document.createElement("li")
-        
-        
         li.textContent = arrayvalue[i]
+        li.addEventListener("click", function renderHistoryList(event){
+            console.log(event.target.innerHTML)
+            cityWeather(event.target.innerHTML);
+        } )
 
         historyList.append(li)
-        li = document.createElement("button")
-       
     }
-    li.addEventListener("click", function renderHistoryList(){
-        console.log(search)
-        cityWeather(search);
-    } )
-
-    // historyList.textContent = search
-    // localStorage.setItem("city", JSON.stringify(search)); 
     
 });
+/////////////////////////////////////////////////
+function clearHistory (){
+    historyList.style.display = "none"
+};
 
+clearBtn.addEventListener("click", clearHistory);
+
+////////////////////////////////////////
 function fiveDays (lat,lon){
    var url = "https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&appid="+apiKey+"&units=imperial";
 
@@ -145,6 +145,17 @@ function reverseDate(text) {
     var year = date[0];
     return month + '/' + day + '/' + year;
 }
+
+
+// Clear the sidebar of past cities searched
+// clearBtn.addEventListener("click", function(){
+//     historyList.style.display = "none"
+// });
+
+//clearBtn.addEventListener("click", clearHistory)
+
+
+
 
 
 
