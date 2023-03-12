@@ -21,6 +21,7 @@ THEN I am again presented with current and future conditions for that city
 
 
 Website Image:
+<img width="1403" alt="Screen Shot 2023-03-11 at 11 14 14 PM" src="https://user-images.githubusercontent.com/119641606/224530104-8ff6467a-b159-4f59-a183-75e0310fb868.png">
 
 
 
@@ -29,7 +30,7 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 
 This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link. Or, download the sources files to use this as a template.
 
-Check my work - Click!
+Check my work - Click! https://fdgardon.github.io/Weather-Dashboard/
 
 
 
